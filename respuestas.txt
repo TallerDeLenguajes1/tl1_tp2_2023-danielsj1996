@@ -1,1 +1,4 @@
-no se puede visualizar el archivo ya que al cambiar de la rama opcion_2 a la rama main, el archivo no está creado en dicha rama.
+2F)
+1) No se puede visualizar el archivo ya que al cambiar de la rama opcion_2 a la rama main, el archivo no está creado en dicha rama.
+2) Que en la rama main solamente aparece el archivo tp2_1_1.c con el archivo respuestas.txt y en la rama opcion_2 solamente aparecen los archivos tp2_1_1.c y tp2_1_2.c.
+3) En este caso ya aparecen todos los archivos de la rama main y opcion_2 fusionados de la rama main 
