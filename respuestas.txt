@@ -1,0 +1,1 @@
+no se puede visualizar el archivo ya que al cambiar de la rama opcion_2 a la rama main, el archivo no está creado en dicha rama.
