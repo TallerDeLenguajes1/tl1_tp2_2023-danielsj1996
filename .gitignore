@@ -4,7 +4,7 @@
 ### Executable ###
 *.app
 *.bat
-*.cgi
+*.cgi
 *.com
 *.exe
 *.gadget
