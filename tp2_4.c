@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <time.h>
 struct compu
 {
     int Velocidad;  // entre 1 y 3 GHz
@@ -17,26 +17,28 @@ void mostrarLista(struct compu pcs);
 void computadoraVieja(struct compu pcs[5]);
 void computadoraRapida(struct compu pcs[5]);
 
-int main() {
+int main()
+{
     // Definicion del arreglo de estructuras para 5 PC
     struct compu pcs[5];
-
+    srand(time(NULL));
     // Carga de datos de las 5 PC
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++)
+    {
         pcs[i] = cargarDatos();
     }
     // Muestro las PC generadas random
     printf("Datos de las 5 PC:\n");
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++)
+    {
         printf("\t\t\t ---------------- COMPUTADORA NUMERO %d ---------------- \n", i + 1);
         mostrarLista(pcs[i]);
-    }    
+    }
     // Muestro la PC mas vieja y mas velocidad
     printf("\t\t\t ---------------- COMPUTADORA MAS VIEJA ---------------- \n");
     computadoraVieja(pcs);
     printf("\t\t\t ---------------- COMPUTADORA CON MAS VELOCIDAD ---------------- \n");
     computadoraRapida(pcs);
-    
 
     return 0;
 }
@@ -74,8 +76,8 @@ void computadoraVieja(struct compu pcs[5])
             aux = pcs[i];
         }
     }
-    printf("\t\t\t\t Anio de fabricacion: %d\n", aux.anio);
     printf("\t\t\t\t Tipo de procesador es: %s\n", aux.tipo_cpu);
+    printf("\t\t\t\t Anio de fabricacion: %d\n", aux.anio);
     printf("\t\t\t\t Cantidad de nucleos(entre 1 y 8): %d\n", aux.cantidad);
     printf("\t\t\t\t Velocidad de procesamiento en GHz: %d\n", aux.Velocidad);
     printf("\n\n");
@@ -90,8 +92,8 @@ void computadoraRapida(struct compu pcs[5])
             aux = pcs[i];
         }
     }
-    printf("\t\t\t\t Anio de fabricacion: %d\n", aux.anio);
     printf("\t\t\t\t Tipo de procesador es: %s\n", aux.tipo_cpu);
+    printf("\t\t\t\t Anio de fabricacion: %d\n", aux.anio);
     printf("\t\t\t\t Cantidad de nucleos(entre 1 y 8): %d\n", aux.cantidad);
     printf("\t\t\t\t Velocidad de procesamiento en GHz: %d\n", aux.Velocidad);
     printf("\n\n");
